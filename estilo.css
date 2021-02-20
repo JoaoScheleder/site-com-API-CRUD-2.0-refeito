@@ -1,0 +1,568 @@
+@charset "UTF-8";
+html, body, nav {
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header div {
+    border: 1px solid black;
+    background-color: rgba(59, 59, 59, 0.79);
+    width: 101%;
+    margin-top: -10px;
+    margin-left: -8px;
+    height: 70px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+.box div,form{
+    margin-top: 150px;
+    position: relative;
+    background-color: rgba(0, 153, 255, 0.397);
+    width: 60vw;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-indent: 30px;
+    text-align: justify;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    color: white;
+}
+section.box div h1,h2{
+    color: white;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px black;
+    margin: 0 auto;
+    width: fit-content;
+}
+section.box div ul{
+    margin-top: 100px;
+}
+section.box div ul li{
+    display: block;
+    position: relative;
+    list-style: none;
+    width: 243px;
+    height: 30px;
+    font-size: 15pt;
+    margin-right: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+section.box div li a{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    border:none;
+}
+section.box div li a::after{
+    display: block;
+    position: relative;
+    margin-left: 30px;
+    margin-right: auto;
+    content: '';
+    background-color: rgb(255, 255, 255,0.5);
+    height: 2px;
+    transition:1s;    
+    margin-top: 5px;
+
+}
+section.box div li a:hover::after{
+    transform: scale(1.3);
+}
+
+footer{
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 90px;
+    bottom: 0;
+    opacity: 1;
+}
+footer div#rodape{
+    border: 1px solid black;
+    background-color: rgba(232,241,242,1);
+    width: 101%;
+    margin-left: -8px;
+    height: 90px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+footer div#rodape hgroup h3{
+    margin-bottom: -20px;
+}
+footer div#rodape hgroup {
+    text-align: center;
+    padding-right: 70px;
+}
+footer div#rodape ul{
+    position: relative;
+    float:right;
+    bottom: 170px;
+    margin-right: 10px;
+    right: 100px;
+}
+footer div#rodape ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+footer img{
+    margin-top: 20px;
+    width: 30px;
+    height: 30px;
+    transition: 0.75s;
+}
+footer img:hover{
+    transform: scale(1.3);
+}
+#termos{
+    position: relative;
+    float: top;
+    bottom: 70px;
+    margin-left: 30px;
+}
+form#registro{
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+}
+
+
+
+
+
+
+legend{
+    position: relative;
+    text-align: center;
+    font-size: 22pt;
+}
+form select{
+    margin-right: 15px;
+}
+input{
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: 1px 1px 2px #333333;
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    width: 130px;
+    height: 30px;
+}
+select{
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: 1px 1px 2px #333333;
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    width: 150px;
+    height: 30px;
+}
+div#container{
+    display: flex;
+}
+div#emprestarctn{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    margin: 0 auto;
+}
+nav{
+    
+    box-sizing: border-box;
+    display: block;
+    display: flex;
+  flex-direction: column;
+    width: 300px;
+    background-color: rgba(0,100,148,0.79);
+    margin-bottom: 0px;
+    height: 100vh;
+    
+}
+nav#infinite{
+    height: inherit;
+}
+nav img{
+    display: block;
+    height: 60px;
+    width: 60px;
+    border: 3px solid rgba(232,241,242,0.79);
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+nav p{
+    display: block;
+    
+    margin: 20px auto;
+   
+    width: fit-content;
+    color: rgba(232,241,242,0.79);
+    font-size: 15pt;
+}
+nav a{
+    display: block;
+    color: rgba(232,241,242,0.79);
+    text-decoration: none;
+    font-size: 1.3em;
+}
+nav ul{
+    position: fixed; 
+    display: block;
+    width: 280px;
+    padding: 0;
+    margin: 0;
+  
+}
+nav ul li{
+    position: relative;
+    list-style: none;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    text-align: center;
+    margin-bottom: 15px;
+    transition: 0.75s;
+    width: 300px;
+
+
+}
+nav ul li:hover{
+    background-color: rgba(0,0,0,0.2);
+    text-decoration: underline;
+}
+section.emprestarmais {
+    margin: 0 auto;
+    color: white;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 60vw;
+    height: fit-content;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+    background-color: rgba(34,68,119,0.79);
+    border: 1px solid lightblue;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.8);
+    border-radius: 5px;
+    margin-bottom: 50px;
+    text-indent: 20px;
+
+}
+section.emprestarmais  img{
+    display: block;
+    position: relative;
+    width: 125px;
+    height: 125px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 75px;
+    border: 1px solid rgba(232,241,242,0.79);
+}
+section.emprestarmais p{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    font-size: 15pt;
+}
+section.emprestarmais h1{
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+    font-size: 30pt;
+    color:white;
+}
+section.emprestarmais button{
+    display: block;
+    font-weight: bolder;
+    font-size: 20pt;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-decoration: none;
+
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+section#emprestaritem{
+    padding: 10px;
+    text-indent: 30px;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+    width: 600px;
+    height: 300px;
+    background-color: rgba(36,107,168,0.79);
+    border: 1px solid lightblue;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.3);
+    border-radius: 2%;
+}
+section#emprestaritem img{
+    position: relative;
+    margin-top: 20px;
+    width: 125px;
+    height: 125px;
+    margin-left: 75px;
+    border: 1px solid rgba(232,241,242,0.79);
+    border: 1px solid black;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.3);
+}
+section#emprestaritem p{
+    position: relative;
+    
+}
+section#emprestaritem p.caracteristica{
+    font-size: 15pt;
+    position: relative;
+   
+}
+section#emprestaritem p.desc{
+    font-size: 15pt;
+
+}
+section#emprestaritem input
+{
+    position: relative;
+    width: 100px;
+    height: 30px;
+    font-weight: bolder;
+}
+textarea{
+    resize: none;
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+form#add{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+form#add label#descricao{
+    position: relative;
+    font-size: 15pt;
+    font-weight: bold;
+}
+form#add label#itemname{
+    font-weight: bold;
+    position: relative;
+}
+form#add input{
+    position: relative;
+    width: 400px;
+    margin-top: 50px;
+}
+form#add button{
+    position: relative;
+    font-size: 16pt;
+}
+form#add input#foto
+{
+    position: relative;
+
+}
+section#lista {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(34, 68, 119);
+    width: 50vw;
+    border: 1px solid lightblue;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.8);
+    margin-top: 30px;
+    border-radius: 5px;
+    margin-bottom: 200px;
+    padding-bottom: 100px;
+}
+div.item{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
+span{
+    color: white;
+    font-size: 15pt;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+section#lista img{
+    margin-left: 30px;
+    margin-top: 30px;
+    display: inline-block;
+    position: relative;
+    width: 125px;
+    height: 125px;
+    border: 1px solid rgba(232,241,242,0.79);
+    border: 1px solid black;
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.3);
+}
+section#lista p {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 15pt;
+}
+section#lista p.data{
+    position: relative;
+    width: fit-content;
+    color: rgba(191,0,6,0.79);
+}
+
+div#config{
+    position: relative;
+    background-color: lightgrey;
+    border: 1px solid lightgrey;
+    box-shadow: 3px 3px 3px black;
+    width: 300px;
+    height: 150px;
+    left: 600px;
+    top: 100px;
+}
+.ver{
+    display: inline-block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 150px;
+    height: 30px;
+
+}
+ 
+input#devolver{
+    position: relative;
+    float: right;
+    width: 150px;
+    height: 50px;
+    font-size: 14pt;
+    font-weight: bolder;
+}
+input#idproduto {
+    position: relative;
+
+}
+input#visualizar{
+    position: relative;
+    left: 200px;
+}
+input#numero{
+    position: relative;
+    bottom: 150px;
+}
+section#relatorio table{
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    background-color:rgba(0,100,148,0.5);
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+section#relatorio td{
+    border:1px solid black;
+    padding: 5px;
+}
+
+legend{
+    margin: 0 auto;
+    padding: 0;
+    text-indent: 0;
+
+}
+
+fieldset{
+    background-color: rgba(255, 255, 255, 0);
+    width: fit-content;
+    border: none;
+    margin: 0 auto;
+}
+label{
+    display: inline-block;
+    height: 30px;
+    width: 120px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+}
+#cSenha ,#cEmail{
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    margin-left: 20px;
+    width: 130px;
+    height: 30px;
+}
+#log{
+    display: block;
+    margin: 0 auto;
+}
+form#registro ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px;
+    box-sizing: border-box;
+}
+input{
+    margin: 0 auto;
+}
+form#registro label{
+    width: 250px;
+    margin-right: auto;
+}
+form#registro input{
+    margin: 0 auto;
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.el{
+   display: inline-block;
+   width: fit-content;
+    padding: 0;
+}
+form#registro fieldset ul{
+    display: flex;
+    flex-direction: column;
+}
+form#registro input#cad{
+    font-size: 1.5rem;
+    display: block;
+    margin: 0 auto;
+    height: fit-content;
+    margin: 0 auto;
+    height: 40px;
+}
+form.helper{ 
+    background-color: rgba(34,68,119,0.79);
+    box-shadow: none;
+    border-bottom: 2px solid black;
+    border-radius: none;
+    display: block;
+    width: 40vw;
+    margin:0 auto;
+
+
+}
